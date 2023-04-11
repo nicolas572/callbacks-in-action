@@ -54,6 +54,8 @@ let allMonths = [
 // After completing the exercise, try changing this number to 2:
 let selectedQuarter = 1;
 
-let selectedMonths = null; // <-- replace null
+let selectedMonths = allMonths.filter(month => {
+	return month.quarter === selectedQuarter
+})
 
 console.log(selectedMonths)
